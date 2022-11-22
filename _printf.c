@@ -57,9 +57,9 @@ int printf(const char *format, ...)
                         while ( j >= 0 )
                         {
                            if ( str[j] != '-' )
-                              putchar(str[j--] + '0');
+                              _putchar(str[j--] + '0');
                            else
-                              putchar(str[j--]);
+                              _putchar(str[j--]);
                         }
                      }
                      break;
@@ -76,7 +76,7 @@ int printf(const char *format, ...)
                            while ( token[j] != '' )
                            {
                               nprinted++;
-                              putchar(token[j]);
+                              _putchar(token[j]);
                               j++;
                            }
                         }
