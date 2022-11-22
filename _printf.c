@@ -88,14 +88,14 @@ int printf(const char *format, ...)
                      break;
           }
 
-          if ( found != 0 )
+          if (found != 0 )
           {
              i += 2;
              continue;
           }
        }
    
-       putchar(format[i]);
+       _putchar(format[i]);
        nprinted++;
 
        i++;
